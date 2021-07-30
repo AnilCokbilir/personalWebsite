@@ -8,18 +8,18 @@
     </div>
 
     <div class="pictures">
-        <div *ngFor="let pic of pc; let i = index;">
-            <img [src]="pic">
+        <!-----
+        <div class="rel" *ngFor="let project of allProjects; let i = index;">
+            <img src="{{project.img}}">
         </div>
-
         <div class="hover">
-            <h4>El Pollo Loco</h4>
-            <p>Javascript -basiertes jump and run Spiel.</p>
+            <h4>{{project.name}}</h4>
+            <p>{{project.type}}</p>
             <button>Bring mich hin!</button>
-        </div>
-
+        </div>--->
 
     </div>
+
 
 
 </div>
