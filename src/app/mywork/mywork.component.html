@@ -1,0 +1,25 @@
+<div class="section3">
+    <h2>Meine Projekte</h2>
+
+    <div class="buttons">
+        <a href="#"><button>Alle</button></a>
+        <a href="#"><button>Angular</button></a>
+        <a href="#"><button>Javascript</button></a>
+    </div>
+
+    <div class="pictures">
+        <div *ngFor="let pic of pc; let i = index;">
+            <img [src]="pic">
+        </div>
+
+        <div class="hover">
+            <h4>El Pollo Loco</h4>
+            <p>Javascript -basiertes jump and run Spiel.</p>
+            <button>Bring mich hin!</button>
+        </div>
+
+
+    </div>
+
+
+</div>
