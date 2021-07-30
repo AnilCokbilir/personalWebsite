@@ -45,22 +45,36 @@
             filter: grayscale(90%);
         }
         .hover {
-            color: white;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
             height: 350px;
             width: 350px;
-            background-color: yellow;
+            background-color: rgba(255, 255, 255, 0.6);
             position: absolute;
             top: 0;
             z-index: 2;
-        }
-        .hover-2 {
-            color: white;
-            height: 350px;
-            width: 350px;
-            background-color: yellow;
-            position: absolute;
-            top: 0;
-            z-index: 2;
+            button {
+                margin-left: 4px;
+                margin-right: 4px;
+                color: #ff4242;
+                border: 2px solid #ff4242;
+                background-color: white;
+                height: 60px;
+                width: 120px;
+                cursor: pointer;
+                &:hover {
+                    background-color: #ff4242;
+                    color: white;
+                }
+            }
+            h4 {
+                color: #ff4242;
+            }
+            p {
+                color: black;
+            }
         }
     }
 }

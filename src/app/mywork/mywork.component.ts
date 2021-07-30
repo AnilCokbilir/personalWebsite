@@ -7,13 +7,16 @@ import { allProjects } from './projetcs';
 })
 export class MyworkComponent implements OnInit {
   pc = ['./assets/img/pc1.jpg', './assets/img/pc2.jpg', './assets/img/pc3.jpg', './assets/img/pc4.jpg',]
-  allProjects: Object[] = [];
+  projects = allProjects;
+
   constructor() { }
 
   ngOnInit(): void {
-    allProjects.forEach((project) => {
-      this.allProjects.push(Object.assign({}, project));
-    });
+
+  }
+
+  navigate() {
+    window.location.href = "http://anil-cokbilir.deinekarrierefabrik.de/SakuraRamen/";
   }
 
 }
