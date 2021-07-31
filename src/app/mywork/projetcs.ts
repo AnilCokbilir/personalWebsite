@@ -15,11 +15,11 @@ export const allProjects = [
         url: 'http://anil-cokbilir.deinekarrierefabrik.de/TicTacToe/'
     },
     {
-        name: 'Join ',
+        name: 'Quizapp',
         description: '',
         img: './assets/img/pc3.jpg',
         type: 'Javascript',
-        url: 'http://anil-cokbilir.deinekarrierefabrik.de/SakuraRamen/'
+        url: 'http://anil-cokbilir.deinekarrierefabrik.de/Quizapp/'
     },
     {
         name: 'CRM ',

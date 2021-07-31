@@ -1,3 +1,7 @@
+html {
+    scroll-behavior: smooth;
+}
+
 header {
     display: flex;
     align-items: center;
@@ -7,8 +11,8 @@ header {
     padding-top: 16px;
     background-color: black;
     img {
-        height: 60px;
-        width: 60px;
+        height: 50px;
+        width: 50px;
     }
     a {
         text-decoration: none;
@@ -17,6 +21,24 @@ header {
         font-size: 20px;
         &:hover {
             color: #ff4242;
+        }
+    }
+}
+
+@media(max-width:1000px) {
+    header {
+        width: 100%;
+        height: 70px;
+        padding-left: 0px;
+        padding-right: 0px;
+        padding-top: 0px;
+        display: flex;
+        align-items: center;
+        img {
+            margin-left: 16px;
+        }
+        a {
+            display: none;
         }
     }
 }
