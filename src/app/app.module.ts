@@ -10,6 +10,8 @@ import { MyworkComponent } from './mywork/mywork.component';
 import { MeComponent } from './me/me.component';
 import { ContactComponent } from './contact/contact.component';
 import { FooterComponent } from './footer/footer.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+
 
 @NgModule({
   declarations: [
@@ -20,11 +22,14 @@ import { FooterComponent } from './footer/footer.component';
     MyworkComponent,
     MeComponent,
     ContactComponent,
-    FooterComponent
+    FooterComponent,
+
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    BrowserAnimationsModule,
+
   ],
   providers: [],
   bootstrap: [AppComponent]

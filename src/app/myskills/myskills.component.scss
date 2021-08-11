@@ -10,13 +10,18 @@
     .flex {
         padding-top: 50px;
         display: grid;
+        align-items: center;
         justify-content: center;
         grid-template-columns: 0.1fr 0.1fr 0.1fr;
         padding-bottom: 40px;
     }
     .test {
-        padding-right: 40px;
+        margin-right: 12px;
+        margin-left: 12px;
         padding-bottom: 50px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
     }
     .skills {
         background-color: white;
@@ -55,11 +60,9 @@
 
 @media(max-width:1000px) {
     .section1 {
-        padding-top: 10px;
+        padding-top: 32px;
         .test {
-            padding-right: 10px;
             padding-bottom: 40px;
-            padding-left: 10px;
         }
         .skills {
             width: 100px;

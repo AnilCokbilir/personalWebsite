@@ -2,23 +2,25 @@
     background-color: black;
 }
 
-html {
-    scroll-behavior: smooth;
-}
-
 .container1 {
-    padding-top: 100px;
+    height: 60vh;
+    padding-top: 150px;
     width: 100%;
     display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .left-container {
-    padding-left: 140px;
-    padding-right: 140px;
+    margin-left: 250px;
+    margin-right: 250px;
     width: 50%;
     h1 {
         font-size: 64px;
         color: white;
+        overflow: hidden;
+        white-space: nowrap;
+        animation: animation 2s steps(60);
     }
     button {
         color: #2dfcd8;
@@ -27,6 +29,7 @@ html {
         height: 60px;
         width: 30%;
         cursor: pointer;
+        animation: button 4s ease-in;
         &:hover {
             background-color: #2dfcd8;
             color: white;
@@ -34,19 +37,67 @@ html {
     }
 }
 
+@keyframes button {
+    0% {
+        transform: scale(0);
+    }
+    50% {
+        transform: scale(0);
+    }
+    80% {
+        transform: scale(1.4);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+@keyframes animation {
+    0% {
+        width: 0;
+        color: #ff4242;
+        border-right: 3px solid white;
+    }
+    50% {
+        border-right: 3px solid white;
+    }
+    100% {
+        width: 22ch;
+        color: #2dfcd8;
+        border-color: transparent;
+    }
+}
+
 .right-container {
     display: flex;
     align-items: center;
     justify-content: flex-end;
-    padding-right: 140px;
-    padding-left: 140px;
+    margin-right: 250px;
+    margin-left: 250px;
     width: 50%;
     img {
+        object-position: top;
+        object-fit: cover;
         position: absolute;
-        height: 350px;
+        height: 400px;
+        width: 400px;
         border: solid 1px transparent;
         border-radius: 100%;
+        padding: 0px;
         background-color: #ff4242;
+        animation: picture 1s steps(60);
+    }
+}
+
+@keyframes picture {
+    0% {
+        height: 0;
+    }
+    50% {
+        height: 175px;
+    }
+    100% {
+        height: 350px;
     }
 }
 
@@ -63,6 +114,9 @@ html {
         border-radius: 100%;
         border-color: white;
         cursor: pointer;
+        &:hover {
+            background-color: #ff4242;
+        }
     }
 }
 
@@ -78,14 +132,17 @@ html {
     .left-container {
         padding-left: 0px;
         padding-right: 0px;
+        padding-bottom: 16px;
         width: 100%;
         display: flex;
         flex-direction: column;
         align-items: center;
         justify-content: center;
         h1 {
+            padding-top: 32px;
             font-size: 35px;
             color: white;
+            animation: animation-resp 1.5s steps(60);
         }
         a {
             width: 100%;
@@ -100,6 +157,7 @@ html {
             height: 70px;
             width: 80%;
             cursor: pointer;
+            animation: button-resp 2.5s ease-in-out;
             &:hover {
                 background-color: #2dfcd8;
                 color: white;
@@ -114,13 +172,51 @@ html {
         width: 100%;
         img {
             position: relative;
-            height: 180px;
+            height: 220px;
+            width: 220px;
             border: solid 1px transparent;
             border-radius: 100%;
             background-color: #ff4242;
+            animation: picture-resp 0.5s steps(60);
         }
     }
     .arrow {
         display: none;
+    }
+}
+
+@keyframes picture-resp {
+    0% {
+        transform: scale(0);
+    }
+    50% {
+        transform: scale(0.5);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+@keyframes animation-resp {
+    0% {
+        transform: scale(0);
+    }
+    50% {
+        transform: scale(0);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+@keyframes button-resp {
+    0% {
+        transform: scale(0);
+    }
+    50% {
+        transform: scale(0);
+    }
+    100% {
+        transform: scale(1);
     }
 }
