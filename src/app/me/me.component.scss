@@ -49,6 +49,7 @@
             border-radius: 100%;
             background-color: #2dfcd8;
             object-fit: cover;
+            //animation: img-animation 1s ease-in infinite;
         }
         h4 {
             padding-top: 12px;
@@ -57,6 +58,15 @@
             margin-top: -6px;
             height: 200px;
         }
+    }
+}
+
+@keyframes img-animation {
+    0% {
+        transform: scale(0.7);
+    }
+    100% {
+        transform: scale(1);
     }
 }
 

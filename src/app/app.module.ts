@@ -11,6 +11,8 @@ import { MeComponent } from './me/me.component';
 import { ContactComponent } from './contact/contact.component';
 import { FooterComponent } from './footer/footer.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { ImpressumComponent } from './impressum/impressum.component';
+import { DatenschutzComponent } from './datenschutz/datenschutz.component';
 
 
 @NgModule({
@@ -23,6 +25,8 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     MeComponent,
     ContactComponent,
     FooterComponent,
+    ImpressumComponent,
+    DatenschutzComponent,
 
   ],
   imports: [
