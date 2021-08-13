@@ -1,3 +1,4 @@
+import { style } from '@angular/animations';
 import { Component, OnInit } from '@angular/core';
 
 @Component({
@@ -6,10 +7,20 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./menu.component.scss']
 })
 export class MenuComponent implements OnInit {
-
+  resp = false;
   constructor() { }
 
   ngOnInit(): void {
+  }
+
+  menu() {
+    if (this.resp == false) {
+      this.resp = true;
+      console.log('true');
+    } else {
+      this.resp = false;
+      console.log('false');
+    }
   }
 
 }

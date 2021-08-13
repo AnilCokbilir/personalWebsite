@@ -1,29 +1,27 @@
 <header>
-    <a href="#home"><img src="./assets/img/logo.png"></a>
+    <a class="logo" href="#home"><img src="./assets/img/logo.png"></a>
 
     <div class="navbar">
         <a href="#home">Home</a>
         <a href="#me">Über mich</a>
         <a href="#mywork">Mein Portfolio</a>
     </div>
+    <div class="responsive">
+        <div>
+            <a href="#home"><img src="./assets/img/logo.png"></a>
+        </div>
+        <div>
+            <a class="icon" (click)="menu()">
+                <img src="./assets/img/menu.png">
+            </a>
+        </div>
+    </div>
 
-
-    <!-- <button mat-icon-button [matMenuTriggerFor]="menu">
-        <mat-icon>more_vert</mat-icon>
-      </button>
-    <mat-menu #menu="matMenu">
-        <button mat-menu-item>
-          <mat-icon>dialpad</mat-icon>
-          <span>Redial</span>
-        </button>
-        <button mat-menu-item disabled>
-          <mat-icon>voicemail</mat-icon>
-          <span>Check voice mail</span>
-        </button>
-        <button mat-menu-item>
-          <mat-icon>notifications_off</mat-icon>
-          <span>Disable alerts</span>
-        </button>
-    </mat-menu> -->
-
+    <div *ngIf="resp" class="mobile-menu" id="thenewlinks" (click)="menu()">
+        <a id="mob1" href="#home">Home</a>
+        <a id="mob2" href="#me">Über mich</a>
+        <a id="mob3" href="#mywork">Mein Portfolio</a>
+        <a routerLink="impressum">Impressum</a>
+        <a routerLink="datenschutz">Datenschutz</a>
+    </div>
 </header>

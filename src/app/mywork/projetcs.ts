@@ -39,7 +39,7 @@ export const allProjects = [
         description: '',
         img: './assets/img/pc2.jpg',
         type: 'Javascript/Firebase',
-        url: 'http://anil-cokbilir.deinekarrierefabrik.de/SakuraRamen/'
+        url: 'http://anil-cokbilir.deinekarrierefabrik.de/Gruppe-90'
     },
 
 

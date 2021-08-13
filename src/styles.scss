@@ -24,3 +24,13 @@ body {
     letter-spacing: normal;
     margin: 0 0 16px;
 }
+
+@media(max-width:1000px) {
+    .mat-h1,
+    .mat-headline,
+    .mat-typography h1 {
+        font: 400 24px/50px Roboto, "Helvetica Neue", sans-serif;
+        letter-spacing: normal;
+        margin: 0 0 16px;
+    }
+}

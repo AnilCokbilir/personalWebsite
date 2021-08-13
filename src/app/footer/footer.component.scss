@@ -2,11 +2,10 @@
     display: flex;
     justify-content: space-around;
     align-items: center;
-    height: 200px;
+    padding: 16px;
     .rechtliches {
         display: flex;
         flex-direction: column;
-        a {}
     }
     a {
         text-decoration: none;
@@ -25,7 +24,6 @@
         flex-direction: column-reverse;
         justify-content: center;
         align-items: center;
-        height: 120px;
         a {
             text-decoration: none;
             color: gray;
