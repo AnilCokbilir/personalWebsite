@@ -38,8 +38,8 @@ export const allProjects = [
         name: 'Join ',
         description: '',
         img: './assets/img/pc2.jpg',
-        type: 'Javascript/Firebase',
-        url: 'http://anil-cokbilir.deinekarrierefabrik.de/Gruppe-90'
+        type: 'Javascript',
+        url: 'http://gruppe-90.developerakademie.com/Finales-Projekt/add-task.html'
     },
 
 
