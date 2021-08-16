@@ -39,7 +39,7 @@ export const allProjects = [
         description: '',
         img: './assets/img/pc2.jpg',
         type: 'Javascript',
-        url: 'http://gruppe-90.developerakademie.com/Finales-Projekt/add-task.html'
+        url: 'http://gruppe-90.developerakademie.com/Finales-Projekt/'
     },
 
 
